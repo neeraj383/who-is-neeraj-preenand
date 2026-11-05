@@ -7,7 +7,7 @@ A personal resume website for Neeraj Preenand, built with HTML and CSS (plus a t
 - `index.html` – the page content
 - `style.css` – all the styling (fonts, colours, layout, animations)
 - `script.js` – makes the "Neeraj Search" box jump to the section you type
-- `assets/` – photos and the video
+- `*.jpg`, `zoomies.mp4` – photos and the video
 
 ## How the Neeraj Search works
 
@@ -16,6 +16,6 @@ The CSS rule `.result:target` only shows the section whose ID is in the URL, so 
 
 ## Updating the site
 
-- **Add a photo:** put the image in `assets/`, then copy one of the `<figure class="polaroid">` blocks in `index.html` and change the `src` and caption.
+- **Add a photo:** upload the image to the repo, then copy one of the `<figure class="polaroid">` blocks in `index.html` and change the `src` and caption.
 - **Add an award or project:** add a new `<li>` inside the right card in the "serious stuff" section.
 - **Change colours:** edit the variables at the top of `style.css` (`--blue`, `--purple`, `--green`, `--black`).

@@ -12,6 +12,11 @@
 </head>
 <body>
 
+  <!-- scroll progress bar, twinkling stars and the glow that follows the mouse -->
+  <div class="progress-bar"></div>
+  <div class="stars"></div>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
   <!-- floating glow orbs in the background -->
   <div class="orb orb-blue"></div>
   <div class="orb orb-purple"></div>
@@ -39,6 +44,15 @@
       <div class="hero-text">
         <p class="sticker sticker-purple">Official website. Mostly.</p>
         <h1>Who is <span class="wobble">Neeraj</span> Preenand?</h1>
+        <p class="rotator-line">Currently
+          <span class="rotator">
+            <span>building Perch Play.</span>
+            <span>pitching to investors.</span>
+            <span>eating noodles.</span>
+            <span>photobombing someone.</span>
+            <span>figuring it out.</span>
+          </span>
+        </p>
         <p class="hero-sub">
           18. Bengaluru. Founder of <strong>Perch Play</strong>, co-founder of <strong>Niri</strong>,
           student at <strong>IIM Bangalore (DBE)</strong> and <strong>MESA (BBA)</strong> at the same time,
@@ -50,12 +64,20 @@
         </div>
       </div>
       <div class="hero-photo">
-        <img src="assets/car-selfie.jpg" alt="Neeraj grinning in a car selfie">
+        <img src="car-selfie.jpg" alt="Neeraj grinning in a car selfie">
         <span class="badge badge-1">₹45K sold in a day</span>
         <span class="badge badge-2">₹3L raised</span>
         <span class="badge badge-3">hair: untamed</span>
       </div>
     </section>
+
+    <!-- ===== TICKER ===== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Founder of Perch Play</span><span>₹3 lakh raised for Niri</span><span>Professional photobomber</span><span>IIM Bangalore + MESA</span><span>Noodle enthusiast</span><span>Figuring it out as I go</span>
+        <span>Founder of Perch Play</span><span>₹3 lakh raised for Niri</span><span>Professional photobomber</span><span>IIM Bangalore + MESA</span><span>Noodle enthusiast</span><span>Figuring it out as I go</span>
+      </div>
+    </div>
 
     <!-- ===== ABOUT ME ===== -->
     <section id="about" class="about-section">
@@ -74,12 +96,65 @@
             I like building things, meeting new people and saying yes to new experiences.
           </p>
         </div>
+        <figure class="about-photo tilt">
+          <img src="beach.jpg" alt="Neeraj on the beach at night with his arms wide open">
+        </figure>
         <div class="fact-stack">
           <div class="fact fact-blue"><span class="fact-label">Based in</span>Bengaluru, India</div>
           <div class="fact fact-purple"><span class="fact-label">Currently building</span>Perch Play 🐦</div>
           <div class="fact fact-green"><span class="fact-label">Favourite colours</span>Black, blue, purple &amp; green</div>
           <div class="fact fact-blue"><span class="fact-label">Life status</span>Figuring it out<span class="blink">_</span></div>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== SNAPSHOTS (auto-scrolling photo strip) ===== -->
+    <section id="snapshots" class="snap-section">
+      <h2 class="section-title">Snapshots</h2>
+      <p class="section-sub">A few moments from my life so far. Hover to pause.</p>
+    </section>
+    <div class="strip">
+      <div class="strip-track">
+          <img src="beach.jpg" alt="On the beach at night">
+          <img src="goa-squad.jpg" alt="Goa squad at the airport">
+          <img src="noodles-1.jpg" alt="Eating noodles">
+          <img src="pitch-stage.jpg" alt="Pitching Niri on stage">
+          <img src="party-glasses.jpg" alt="Glow glasses at a party">
+          <img src="bus-selfie.jpg" alt="Photobombing a selfie">
+          <img src="cheque.jpg" alt="Receiving funding cheques">
+          <img src="night-trio.jpg" alt="With friends at night">
+          <img src="pool-goofy.jpg" alt="Goofy face with a friend">
+          <img src="tie-shaka.jpg" alt="Shaka signs in a tie">
+          <img src="judges-demo.jpg" alt="Demoing Niri to judges">
+          <img src="car-selfie.jpg" alt="Car selfie">
+          <img src="judge-qa.jpg" alt="Answering a judge">
+          <img src="noodles-2.jpg" alt="Waiting for noodles">
+          <img src="beach.jpg" alt="">
+          <img src="goa-squad.jpg" alt="">
+          <img src="noodles-1.jpg" alt="">
+          <img src="pitch-stage.jpg" alt="">
+          <img src="party-glasses.jpg" alt="">
+          <img src="bus-selfie.jpg" alt="">
+          <img src="cheque.jpg" alt="">
+          <img src="night-trio.jpg" alt="">
+          <img src="pool-goofy.jpg" alt="">
+          <img src="tie-shaka.jpg" alt="">
+          <img src="judges-demo.jpg" alt="">
+          <img src="car-selfie.jpg" alt="">
+          <img src="judge-qa.jpg" alt="">
+          <img src="noodles-2.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- ===== NUMBERS ===== -->
+    <section id="numbers" class="numbers-section">
+      <h2 class="section-title">Neeraj in numbers</h2>
+      <div class="stats">
+        <div class="stat stat-green"><span class="num" data-to="45" data-prefix="₹" data-suffix="K">₹45K</span><span class="stat-text">sold in one day</span></div>
+        <div class="stat stat-blue"><span class="num" data-to="3" data-prefix="₹" data-suffix="L">₹3L</span><span class="stat-text">raised for Niri</span></div>
+        <div class="stat stat-purple"><span class="num" data-to="2">2</span><span class="stat-text">startups so far</span></div>
+        <div class="stat stat-green"><span class="num" data-to="95.25" data-suffix="%" data-decimals="2">95.25%</span><span class="stat-text">in Class XII</span></div>
+        <div class="stat stat-blue"><span class="num">∞</span><span class="stat-text">bowls of noodles</span></div>
       </div>
     </section>
 
@@ -121,15 +196,15 @@
           <p class="result-tag">Status: unsupervised</p>
           <div class="photo-grid">
             <figure class="polaroid tilt-left wide">
-              <img src="assets/goa-squad.jpg" alt="Neeraj with friends in matching I love Goa t-shirts at the airport">
+              <img src="goa-squad.jpg" alt="Neeraj with friends in matching I love Goa t-shirts at the airport">
               <figcaption>Matching shirts. Zero shame.</figcaption>
             </figure>
             <figure class="polaroid tilt-right">
-              <img src="assets/party-glasses.jpg" alt="Neeraj in glowing party glasses">
+              <img src="party-glasses.jpg" alt="Neeraj in glowing party glasses">
               <figcaption>Glow glasses = personality upgrade</figcaption>
             </figure>
             <figure class="polaroid tilt-left">
-              <img src="assets/night-trio.jpg" alt="Neeraj with two friends at night">
+              <img src="night-trio.jpg" alt="Neeraj with two friends at night">
               <figcaption>The squad, night mode</figcaption>
             </figure>
           </div>
@@ -141,22 +216,22 @@
           <p class="result-tag">Status: 100% himself</p>
           <div class="photo-grid">
             <figure class="polaroid tilt-right tall">
-              <img src="assets/beach.jpg" alt="Neeraj on the beach at night with arms wide open">
+              <img src="beach.jpg" alt="Neeraj on the beach at night with arms wide open">
               <figcaption>Main character energy</figcaption>
             </figure>
             <figure class="polaroid tilt-left flip">
               <div class="flip-inner">
-                <img class="flip-front" src="assets/noodles-1.jpg" alt="Neeraj eating noodles">
-                <img class="flip-back" src="assets/noodles-2.jpg" alt="Neeraj with mouth open, waiting for noodles">
+                <img class="flip-front" src="noodles-1.jpg" alt="Neeraj eating noodles">
+                <img class="flip-back" src="noodles-2.jpg" alt="Neeraj with mouth open, waiting for noodles">
               </div>
               <figcaption>Hover me. Noodles, before and after.</figcaption>
             </figure>
             <figure class="polaroid tilt-right">
-              <img src="assets/pool-goofy.jpg" alt="Neeraj pulling a goofy face with a friend">
+              <img src="pool-goofy.jpg" alt="Neeraj pulling a goofy face with a friend">
               <figcaption>Serious photo attempt #47</figcaption>
             </figure>
             <figure class="polaroid tilt-left">
-              <img src="assets/bus-selfie.jpg" alt="Neeraj photobombing a selfie">
+              <img src="bus-selfie.jpg" alt="Neeraj photobombing a selfie">
               <figcaption>Professional photobomber</figcaption>
             </figure>
             <p class="mini-quote">Fun fact: has never once taken a normal photo.</p>
@@ -169,19 +244,19 @@
           <p class="result-tag">Status: blazer on, jokes off</p>
           <div class="photo-grid">
             <figure class="polaroid tilt-left wide">
-              <img src="assets/pitch-stage.jpg" alt="Neeraj and the Niri team pitching on stage at Masters' Union">
+              <img src="pitch-stage.jpg" alt="Neeraj and the Niri team pitching on stage at Masters' Union">
               <figcaption>Pitching Niri at Masters' Union</figcaption>
             </figure>
             <figure class="polaroid tilt-right">
-              <img src="assets/judges-demo.jpg" alt="Neeraj demoing the Niri prototype to judges">
+              <img src="judges-demo.jpg" alt="Neeraj demoing the Niri prototype to judges">
               <figcaption>Live demo for the judges</figcaption>
             </figure>
             <figure class="polaroid tilt-left">
-              <img src="assets/judge-qa.jpg" alt="Neeraj answering questions from a judge">
+              <img src="judge-qa.jpg" alt="Neeraj answering questions from a judge">
               <figcaption>Answering the hard questions</figcaption>
             </figure>
             <figure class="polaroid tilt-right wide">
-              <img src="assets/cheque.jpg" alt="The Niri team receiving two big funding cheques">
+              <img src="cheque.jpg" alt="The Niri team receiving two big funding cheques">
               <figcaption>Two big cheques. ₹3 lakh raised.</figcaption>
             </figure>
           </div>
@@ -198,7 +273,7 @@
           <p class="result-tag">Status: zoomies activated</p>
           <div class="physical-layout">
             <figure class="polaroid tilt-left video-card">
-              <video src="assets/zoomies.mp4" poster="assets/zoomies-poster.jpg" autoplay muted loop playsinline></video>
+              <video src="zoomies.mp4" poster="zoomies-poster.jpg" autoplay muted loop playsinline></video>
               <figcaption>Speed: unmeasured. Enthusiasm: maximum.</figcaption>
             </figure>
             <div class="stat-card">
@@ -209,7 +284,7 @@
               <p><span class="stat-label">Will to win</span><span class="meter"><span style="width: 95%"></span></span></p>
             </div>
             <figure class="polaroid tilt-right">
-              <img src="assets/tie-shaka.jpg" alt="Neeraj in a shirt and tie throwing shaka signs">
+              <img src="tie-shaka.jpg" alt="Neeraj in a shirt and tie throwing shaka signs">
               <figcaption>Post-run cooldown, tie still on</figcaption>
             </figure>
           </div>
